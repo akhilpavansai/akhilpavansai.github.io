@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('../img/home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+/* Nav bar styling */
+.navbar {
+  top: 0;
+  position: sticky;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+}
+.navbar li {
+  float: left;
+  width: 25%;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #777;
+}
+
+/* Home section styling */
+#home {
+  float: right;
+  width: 40%;
+  margin-top: 9%;
+  background-color: white;
+}
+
+#home h1 {
+  text-align: center;
+}
+
+#home p {
+  float: right;
+}
