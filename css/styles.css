@@ -1,50 +1,157 @@
 * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-image: url('../img/home.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 800px;
-}
-/* Nav bar styling */
-.navbar {
-  top: 0;
-  position: sticky;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: black;
-}
-.navbar li {
-  float: left;
-  width: 25%;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.navbar li a:hover {
-  background-color: #777;
+/* navbar styles */
+.navbar-container {
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-/* Home section styling */
-#home {
-  float: right;
-  width: 40%;
-  margin-top: 9%;
-  background-color: white;
+#navbar {
+    display: flex;
+    list-style-type: none;
 }
 
-#home h1 {
-  text-align: center;
+#navbar li {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
 }
 
-#home p {
-  float: right;
+#navbar li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#navbar :hover {
+    background-color: #03C03C;
+    font-weight: bolder;
+}
+
+/* Home styles */
+.home {
+    background-image: url('../img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.home .heading1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 100px;
+    color: red;
+}
+
+.home .para1 {
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+
+.home .para2 {
+    float: right;
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin-right: 5px;
+}
+
+/* about me and contact me */
+
+.grid-2 {
+    display: flex;
+}
+
+.grid-2 #About-Me {
+    flex: 2;
+    border-right: 3px solid greenyellow;
+}
+
+#About-Me h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+#About-Me p {
+    text-align: justify;
+}
+
+#About-Me ul {
+    margin: 15px 15px;
+    padding: 15px 15px;
+}
+
+.grid-2 #Contact-Me {
+    flex: 2;
+}
+
+#Contact-Me h1 {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+#Contact-Me p {
+    text-align: center;
+}
+
+#Contact-Me ul {
+    margin: 15px 15px;
+    padding: 15px 15px;
+    list-style-type: none;
+    display: flex;
+    margin: 0 15%;
+}
+
+#Contact-Me ul li {
+    flex: 1;
+}
+
+#Contact-Me ul li :hover {
+    color:blue !important;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    border-top: 3px solid greenyellow;
+}
+
+.gallery-container h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: red;
+}
+
+.gallery-container img {
+    border: 2px solid green;
+}
+
+#gallery-grid {
+    margin: 5% 5%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+#gallery-grid img {
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
 }

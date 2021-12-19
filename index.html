@@ -3,24 +3,77 @@
     <head>
         <title>Art Gallery</title>
         <link href="./css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
         <!--Nav bar-->
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a>About Me</a></li>
-            <li><a>Contact Me</a></li>
-            <li><a>Gallery</a></li>
-        </ul>
+        <div class="navbar-container">
+            <ul id="navbar">
+                <li><a href="#homeId">Home</a></li>
+                <li><a href="#About-Me">About Me</a></li>
+                <li><a href="#Contact-Me">Contact Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
 
+    
         <!--Home section-->
-        <div id="home">
-            <h1>Welcome To Art Gallery</h1>
-            <p>An Online Gallery About Modern & Contemporary Indian Art<br/>
-                Masters Collection is over a decade old Indian Art Gallery based in Kolkata, India. The primary vision of the gallery is to procure, advice & promote an exclusive range of Indian Contemporary Art, Indian Modern Art and all other genres of Indian Painting by exploring and evaluating artists from across India.<br/>
-                Over the last few years, Indian Art has gained immense fame not only on national grounds but also on an international level. And it is with the aim to continue the respect and charm, that this gallery currently showcases some of the finest collection of Indian Artworks & Indian Paintings of eminent and famous artists of Bengal & rest of India.<br/>
-                Taking Modern Indian Art To Higher Heights Of Recognition</p>
+        <div class="home" id="homeId">
+                <p class="heading1">Welcome To My Page</p><br/><br/>
+                <p class="para1">>>> An Online Gallery About Modern & Contemporary Indian Art<br/><br/>
+                    >>> Masters Collection is over a decade old Indian Art Gallery based in Kolkata, India. The primary vision of the gallery is to procure, advice & promote an exclusive range of Indian Contemporary Art, Indian Modern Art and all other genres of Indian Painting by exploring and evaluating artists from across India.<br/>
+                </p>
+                <p class="para2">
+                    >>> Over the last few years, Indian Art has gained immense fame not only on national grounds but also on an international level. And it is with the aim to continue the respect and charm, that this gallery currently showcases some of the finest collection of Indian Artworks & Indian Paintings of eminent and famous artists of Bengal & rest of India.<br/><br/>
+                    >>> Taking Modern Indian Art To Higher Heights Of Recognition
+                </p>
+        </div>
+
+        <!--About Me and Contact Me-->
+        <br/>
+        <div class="grid-2">
+            <div id="About-Me">
+                <h1>About Me</h1>
+                <ul>
+                    <li> I am a construction business owner, part time marketer, and soon to be web developer.</br>
+                    I love the internet, technology, and building beautiful things.</li>
+                    <li>Where I'm From<br/>
+                        I'm originally from Toronto, Ontario.</li>
+                    <li> What are your favorite hobbies?<br/>
+                        My favorite hobby is building things on the internet like ecommerce sites and email marketing campaigns.<br/></li>
+                    <li>What's your dream job?<br/>
+                        My dream job is similar to my current job except I would like to be building software instead of buildings.<br/></li>
+                    <li>Where do you live?<br/>
+                        I live on a rural acreage, but I'm close to Ottawa and Montreal.<br/></li>
+                    <li>Why do you want to be a web developer?<br/>
+                        Because programming is awesome and programming for the internet is even more awesome.<br/></li>
+                </ul>
+ 
+            </div>
+            <div id="Contact-Me">
+                <h1>Contact Me</h1><br/>
+                <p>Say hi to me on these social networks: </p>
+                <ul>
+                    <li><i class="fa fa-facebook-square fa-5x"></i></li>
+                    <li><i class="fa fa-envelope fa-5x"></i></li>
+                    <li><i class="fa fa-instagram fa-5x"></i></li>
+                    <li><i class="fa fa-twitter fa-5x"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Gallery section-->
+        <br/>
+        <br/>
+        <div class="gallery-container" id="gallery">
+            <h1>My Gallery</h1>
+            <div id="gallery-grid">
+                <img src="./img/img1.jpg" />
+                <img src="./img/img2.jpg" />
+                <img src="./img/img3.jpg" />
+                <img src="./img/img4.jpg" />
+            </div>
         </div>
     </body>
 </html>
