@@ -43,7 +43,7 @@
     background-image: url('../img/home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 670px;
 }
 
 .home .heading1 {
@@ -51,36 +51,31 @@
     font-weight: bolder;
     font-size: 80px;
     color: black;
-    border: 3px solid greenyellow;
-    background-color: greenyellow;
     font-family: 'Space Mono', monospace;
     font-family: 'Vujahday Script', cursive;
+    text-shadow: 2px 2px 4px white;
 }
 
 .home .para1 {
     width: 40%;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: bolder;
     text-align: justify;
     margin-left: 5px;
-    background-color: white;
-    border: 3px solid greenyellow;
-    background-color: greenyellow;
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 4px white;
 }
 
 
 .home .para2 {
     float: right;
     width: 40%;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: bolder;
     text-align: justify;
     margin-right: 5px;
-    background-color: white;
-    border: 3px solid greenyellow;
-    background-color: greenyellow;
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 4px white;
 }
 
 /* about me and contact me */
@@ -181,17 +176,16 @@
 
 #gallery-grid {
     align-items: center;
-  justify-items: center;
+    justify-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    gap: 20px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px;
+    gap: 10px;
 }
 
 #gallery-grid img {
-    background-size: 300px 300px;
-    width: 300px;
+    width: 98%;
     height: 250px;
 }
