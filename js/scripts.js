@@ -1,3 +1,4 @@
+
 function validate()
 {
     console.log("hi");
@@ -32,3 +33,11 @@ function denied()
     alert("check your form fields, form not submitted!");
     return false;
 }
+
+/* scripts for image container */
+
+data.images.forEach( function(obj) {
+    var img = new Image();
+    img.src = obj.image;
+    document.getElementById("gallery-grid").appendChild(img);
+  });
