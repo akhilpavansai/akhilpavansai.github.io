@@ -7,7 +7,6 @@
 .navbar-container {
     background-color: black;
     overflow: hidden;
-    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -123,28 +122,17 @@
     font-family: 'Space Mono', monospace;
     font-family: 'Vujahday Script', cursive;
 }
-
-#Contact-Me p {
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    font-weight: bold;
-    font-size: 20px;
+#Contact-Me form {
+    border: 1px dotted green;
+    border-radius: 100%;
 }
-
-#Contact-Me ul {
-    margin: 15px 15px;
-    padding: 15px 15px;
-    list-style-type: none;
-    display: flex;
-    margin: 0 15%;
-}
-
-#Contact-Me ul li {
-    flex: 1;
-}
-
-#Contact-Me ul li :hover {
-    color:blue !important;
+#Contact-Me form input, textarea,button{
+    display: block;
+    margin : 0 auto;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px dotted green;
 }
 
 /* Gallery Grid */
