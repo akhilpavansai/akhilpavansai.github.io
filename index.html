@@ -54,11 +54,14 @@
                     <li> I became web developer because programming is awesome and programming for the internet is even more awesome.<br/></li>
                 </ul>
  
+                <!-- hidden fram to redirect to same page after form submission-->
+                <iframe name="hiddenFrame" class="hide"></iframe>
+                
             </div>
             <div id="Contact-Me">
                 <h1>Contact Me</h1><br/>
                 <div id="form">
-                    <form method="post">
+                    <form method="post" target="hiddenFrame">
                         <input type="text" id="name" placeholder="Enter your name" value=""/>
                         <input type="email"  id="email" placeholder="Enter your mail id" value="" />
                         <textarea id="message" placeholder="Enter your message" value=""></textarea>
